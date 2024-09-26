@@ -1,13 +1,11 @@
 import './App.css'
-import Bulb from './components/Bulb'
-import Counter from './components/Count'
+import Register from './components/register'
 
 function App() {
 
   return (
     <>
-      <Bulb />
-      <Counter />
+      <Register />
     </>
   )
 }
