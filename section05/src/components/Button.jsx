@@ -13,8 +13,20 @@ const Button = ({text, color, children }) => {
   console.log(color);
   console.log(children); // {$$typeof: Symbol(react.element), type: 'div', key: null, ref: null, props: {…}, …}
 
+  const onClikckButton = (e) => {
+    console.log(e);
+    console.log(text);
+  }
+
   return ( 
-    <button style={{color : color}}>
+    <button 
+      // onClick={ () => {
+      //   console.log(text);
+      // }}
+      onClick={onClikckButton}
+      // onMouseEnter={onClikckButton}
+      style={{color : color}}
+    >
       {text} - {color.toUpperCase()}
       {children}
     </button>
